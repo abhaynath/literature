@@ -1,46 +1,61 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap'); */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap'); */
-@import url('../fa/css/all.min.css');
+@import url("../fa/css/all.min.css");
 @font-face {
   font-family: "tiromarathi";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/tiro/tiromarathi_eot.eot");
-  src: local(""), url("../fonts/tiro/tiromarathi_eot.eot") format("embedded-opentype"), url("../fonts/tiro/tiromarathi.woff2") format("woff2"), url("../fonts/tiro/tiromarathi_woff.woff") format("woff"),
-    url("../fonts/tiro/tiromarathi_ttf.ttf") format("truetype"), url("../fonts/tiro/tiro-devanagari-marathi-v2-latin_devanagari-regular.svg#TiroDevanagariMarathi") format("svg");
+  src: local(""), url("../fonts/tiro/tiromarathi_eot.eot") format("embedded-opentype"), url("../fonts/tiro/tiromarathi.woff2") format("woff2"),
+    url("../fonts/tiro/tiromarathi_woff.woff") format("woff"), url("../fonts/tiro/tiromarathi_ttf.ttf") format("truetype"),
+    url("../fonts/tiro/tiro-devanagari-marathi-v2-latin_devanagari-regular.svg#TiroDevanagariMarathi") format("svg");
 }
-
+:root {
+  --main-bg-color: white;
+  --main-txt-color: rgb(0, 45, 95);
+  --hover-text-color: rgb(255, 115, 0);
+}
 html,
 body {
   margin: 0;
   padding: 0;
   /* height: 100%; */
   /* font-family: "robotoregular"; */
-  background-color: white;
-  color: rgb(73, 73, 73);
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
   font-size: 16px;
   /* font-family: 'Amita', cursive; */
   /* font-family: 'Tiro Devanagari Hindi', serif; */
-  font-family: 'tiromarathi';
+  font-family: "tiromarathi";
 }
 body::-webkit-scrollbar {
-    width: 1em;
-  }
-  
-  body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 1);
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(226, 226, 226);
-    outline: 1px solid slategrey;
-  }
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(226, 226, 226);
+  outline: 1px solid slategrey;
+}
 .rb {
   font-family: "robotobold";
 }
 #toc ul {
   list-style: none;
+}
+#toc a {
+  text-decoration: none;
+}
+#toc a,
+#toc a:visited {
+  color: var(--main-txt-color);
+}
+#toc a:hover {
+  color: var(--hover-text-color);
 }
 .content {
   padding: 10px;
@@ -51,15 +66,15 @@ body::-webkit-scrollbar {
   padding: 0;
 }
 .content p {
-    text-indent: 3em;
+  text-indent: 3em;
   /* margin-top: 5px; */
   font-size: 0.9em;
   line-height: 1.5em;
   word-spacing: 0.3em;
 }
-nav{
-    padding:10px;
+nav {
+  padding: 10px;
 }
-nav i{
-    color:black;
+nav i {
+  color: var(--main-txt-color);
 }
