@@ -1,0 +1,9 @@
+/* tiro-devanagari-marathi-regular - latin_devanagari */
+@font-face {
+  font-family: "Tiro Devanagari Marathi";
+  font-style: normal;
+  font-weight: 400;
+  src: url("tiromarathi_eot.eot");
+  src: local(""), url("tiromarathi_eot.eot") format("embedded-opentype"), url("tiromarathi.woff2") format("woff2"), url("tiromarathi_woff.woff") format("woff"),
+    url("tiromarathi_ttf.ttf") format("truetype"), url("tiro-devanagari-marathi-v2-latin_devanagari-regular.svg#TiroDevanagariMarathi") format("svg");
+}

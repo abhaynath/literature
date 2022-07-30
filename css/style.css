@@ -1,3 +1,16 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap'); */
+
+@font-face {
+  font-family: "tiromarathi";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/tiro/tiromarathi_eot.eot");
+  src: local(""), url("../fonts/tiro/tiromarathi_eot.eot") format("embedded-opentype"), url("../fonts/tiro/tiromarathi.woff2") format("woff2"), url("../fonts/tiro/tiromarathi_woff.woff") format("woff"),
+    url("../fonts/tiro/tiromarathi_ttf.ttf") format("truetype"), url("../fonts/tiro/tiro-devanagari-marathi-v2-latin_devanagari-regular.svg#TiroDevanagariMarathi") format("svg");
+}
+
 html,
 body {
   margin: 0;
@@ -7,6 +20,9 @@ body {
   background-color: white;
   color: rgb(73, 73, 73);
   font-size: 16px;
+  /* font-family: 'Amita', cursive; */
+  /* font-family: 'Tiro Devanagari Hindi', serif; */
+  font-family: 'tiromarathi';
 }
 body::-webkit-scrollbar {
     width: 1em;
