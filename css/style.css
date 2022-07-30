@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(226, 226, 226);
     outline: 1px solid slategrey;
   }
 .rb {
@@ -43,4 +43,7 @@ body::-webkit-scrollbar {
 }
 nav{
     padding:10px;
+}
+nav i{
+    color:black;
 }
