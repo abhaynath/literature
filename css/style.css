@@ -15,6 +15,7 @@
   --main-bg-color: white;
   --main-txt-color: rgb(0, 45, 95);
   --hover-text-color: rgb(255, 115, 0);
+  --marker-color: rgb(253, 38, 0);
 }
 html,
 body {
@@ -82,11 +83,54 @@ nav i:hover {
   color: var(--hover-text-color);
 }
 details details ul li {
-  list-style: circle;
+  /* list-style: circle; */
 }
 .b {
   font-weight: bold;
 }
 .i {
   font-style: italic;
+}
+summary {
+  cursor: pointer;
+}
+details ul {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+details ul li {
+  padding: 10px;
+}
+details ul li:before {
+  content: "\f2dc";
+  margin: 0.5em;
+  color: var(--marker-color);
+  font-family: "Font Awesome 5 Free";
+}
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "🡒";
+  /* content: "\f2dc"; */
+  margin: 0.5em;
+  color: var(--marker-color);
+  /* font-family: "Font Awesome 5 Free"; */
+
+  color: var(--marker-color);
+  /* you can style it however you want, use background-image for example */
+}
+
+/* By using [open] we can define different styles when the disclosure widget is open */
+details[open] summary::before {
+  content: "🡑";
+  color: var(--marker-color);
+}
+details summary > * {
+  display: inline;
 }
