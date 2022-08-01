@@ -116,20 +116,25 @@ summary::-webkit-details-marker {
 }
 
 details summary::before {
-  content: "🡒";
-  /* content: "\f2dc"; */
+  /* content: "🡒"; */
+  content: "\f35a";
+  font-weight: 900;
   margin: 0.5em;
   color: var(--marker-color);
-  /* font-family: "Font Awesome 5 Free"; */
+  font-family: "Font Awesome 5 Free";
+  /* font-family: "Font Awesome 5 Brands"; */
 
-  color: var(--marker-color);
+  /* color: var(--marker-color); */
   /* you can style it however you want, use background-image for example */
 }
 
 /* By using [open] we can define different styles when the disclosure widget is open */
 details[open] summary::before {
-  content: "🡑";
+  content: "\f0aa";
+  margin: 0.5em;
   color: var(--marker-color);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 details summary > * {
   display: inline;
