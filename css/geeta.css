@@ -1,0 +1,22 @@
+.ay {
+  /* background-color: orange; */
+  color: red;
+}
+.ay ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.ay li {
+  padding: 10px;
+  border-bottom: 1px solid red;
+  text-align: center;
+}
+.ay .uw {
+  /* text-align: center; */
+  font-style: italic;
+}
+.ay .sh {
+  font-weight: bold;
+  font-size: 1.2em;
+}
