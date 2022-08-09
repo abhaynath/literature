@@ -4,11 +4,12 @@
 }
 .ay ul {
   list-style: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 .ay li {
   padding: 10px;
+  margin: 5px;
   border-bottom: 1px solid red;
   text-align: center;
 }
@@ -19,4 +20,8 @@
 .ay .sh {
   font-weight: bold;
   font-size: 1.2em;
+}
+.ay .ar {
+  padding-top: 10px;
+  font-size: 1.1em;
 }
